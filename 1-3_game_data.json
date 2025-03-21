@@ -1,0 +1,82 @@
+[
+  {
+    "name": "League of Legends: Wild Rift",
+    "score": 5.3,
+    "category": "MOBA",
+    "company": "Riot Games",
+    "text": "進入《激鬥峽谷》，這是《英雄聯盟》專為手機與主機打造的 5v5 MOBA 體驗！全新的操控方式與快節奏的比賽，讓各種等級的玩家都能與好友組隊，選擇自己的英雄，發揮精采表現！",
+    "image": "https://www.riotgames.com/darkroom/1440/08bcc251757a1f64e30e0d7e8c513d35:be16374e056f8268996ef96555c7a113/wr-cb1-announcementarticle-banner-1920x1080.png"
+  },
+  {
+    "name": "League of Legends",
+    "score": 4.7,
+    "category": "MOBA",
+    "company": "Riot Games",
+    "text": "為召喚師，你將擁有一個獨特且可自訂的角色，並隨著遊戲進程逐步成長。在每場戰鬥中，你將從數十位英雄中選擇一位，操控並與訓練有素的戰士團隊正面交鋒。謹慎選擇你的盟友，因為這場戰鬥的賭注極高。在這個聯盟中，每一場戰鬥都關乎生死，勝敗將決定權力的變動！",
+    "image": "https://cdn1.epicgames.com/offer/24b9b5e323bc40eea252a10cdd3b2f10/EGS_LeagueofLegends_RiotGames_S1_2560x1440-80471666c140f790f28dff68d72c384b"
+  },
+  {
+    "name": "Valorant",
+    "score": 4.7,
+    "category": "射擊",
+    "company": "Riot Games",
+    "text": "一款 5v5 角色導向的戰術射擊遊戲。想像一下，戰術射擊與超自然能力的結合，每個人都擁有槍械以及獨特的技能！",
+    "image": "https://assets.xboxservices.com/assets/4e/bc/4ebcb533-e184-42f3-833b-9aa47a81f39e.jpg?n=153142244433_Poster-Image-1084_1920x720.jpg"
+  },
+  {
+    "name": "Legends of Runeterra",
+    "score": 6.5,
+    "category": "策略",
+    "company": "Riot Games",
+    "text": "在充滿變數的動態戰鬥中與對手對決，你將有無數機會適應戰局並展現操作技巧。果斷行動，但也要隨時準備應對，因為你的對手也有自己的策略。最終決戰時刻，你能智勝對方並贏得勝利嗎？",
+    "image": "https://cdn1.epicgames.com/offer/4fb89e9f47fe48258314c366649c398e/EGS_LegendsofRuneterra_RiotGames_S1_2560x1440-53b4135a798b686f67f2a95de625858f"
+  },
+  {
+    "name": "Teamfight Tactics",
+    "score": 3.5,
+    "category": "策略",
+    "company": "Riot Games",
+    "text": "在《聯盟戰棋》中集結你最喜愛的英雄！這是一款由《英雄聯盟》開發商 Riot Games 推出的 PVP 策略自動戰鬥遊戲。",
+    "image": "https://cdn1.epicgames.com/offer/ada73cc2d68a46a18f529ebb87328dee/EGS_TeamfightTactics_RiotGames_S1_2560x1440-89c1737b814846c81e7adc52839dc5b4"
+  },
+  {
+    "name": "Genshin Impact",
+    "score": 5.0,
+    "category": "RPG",
+    "company": "miHoYo",
+    "text": "歡迎來到美麗的提瓦特幻想世界！踏入這片充滿冒險與神秘的廣闊開放世界，英雄的旅程在此展開。作為來自異世界的旅行者，你必須尋找失散的親人，並揭開提瓦特世界的眾多秘密。",
+    "image": "https://cdn1.epicgames.com/salesEvent/salesEvent/EGS_GenshinImpact_miHoYoLimited_S1_2560x1440-91c6cd7312cc2647c3ebccca10f30399?resize=1&w=480&h=270&quality=medium"
+  },
+  {
+    "name": "Honkai Impact 3rd",
+    "score": 7.4,
+    "category": "3D",
+    "company": "miHoYo",
+    "text": "《崩壞3rd》是一款免費遊玩的 3D 動作角色扮演遊戲，由 miHoYo 開發與發行（中國大陸以外的地區由 Cognosphere 代理，品牌名為 HoYoverse）。作為《崩壞學園2》的精神續作，本作沿用了許多前作角色，並展開全新的故事線。",
+    "image": "https://cdn2.unrealengine.com/egs-honkaiimpact3rd-mihoyolimited-s1-2560x1440-bba3636f7a5c.jpg"
+  },
+  {
+    "name": "Honkai: Star Rail",
+    "score": 6.6,
+    "category": "RPG",
+    "company": "miHoYo",
+    "text": "《崩壞：星穹鐵道》的遊戲世界充滿未知等待探索，將神話與傳說元素融入科幻故事中。遊戲邀請玩家登上「星穹列車」，穿越不同的奇幻世界，每個世界都蘊藏著獨特的冒險與驚喜！",
+    "image": "https://static.wikia.nocookie.net/houkai-star-rail/images/8/8e/Second_Closed_Beta_Wallpaper.png/revision/latest?cb=20240127072715"
+  },
+  {
+    "name": "Zenless Zone Zero",
+    "score": 6.8,
+    "category": "RPG",
+    "company": "miHoYo",
+    "text": "《絕區零》是一款全新的遊戲 IP，故事發生在一座末日後的都市。遊戲擁有引人入勝的劇情、未來感十足的美術風格、獨特的角色設計，以及爽快刺激的動作戰鬥系統！",
+    "image": "https://backbone.com/_next/image/?url=https%3A%2F%2Ffiles.backbon3.com%2Fcdn-cgi%2Fimage%2Fwidth%3D648%2Cheight%3D364%2Cfit%3Dscale-down%2Fcontent%2F2024%2FZZZ-tile-transformed%2520-1-.webp&w=640&q=75&dpl=dpl_CBwcAQuf9Py1kRe7a7LrWDfwGGUt"
+  },
+  {
+    "name": "Minecraft",
+    "score": 8.2,
+    "category": "冒險",
+    "company": "Mojang AB",
+    "text": "Minecraft讓玩家在三維環境中創造和摧毀各種類型的方塊。玩家控制一個化身，可以摧毀或創造方塊，並在各種多人伺服器和多種遊戲模式中構建出奇幻的結構、創作和藝術作品。",
+    "image": "https://image.api.playstation.com/vulcan/ap/rnd/202407/0401/670c294ded3baf4fa11068db2ec6758c63f7daeb266a35a1.png"
+  }
+]
