@@ -1,0 +1,82 @@
+[
+    {
+      "name": "Animal Crossing: New Horizons",
+      "score": 5.8,
+      "category": "生活模擬",
+      "company": "任天堂",
+      "text": "《集合啦！動物森友會》讓玩家在一個充滿可愛動物的島嶼上展開生活。你可以自由地建設、釣魚、捕蟲、裝飾家園，並與島上的居民建立深厚的友誼。這款遊戲帶來了輕鬆愉快的體驗，適合任何時候放鬆心情。",
+      "image": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_700/ncom/en_US/games/switch/a/animal-crossing-new-horizons-switch/screenshot-gallery/screenshot05"
+    },
+    {
+        "name": "Mario Kart 8 Deluxe",
+        "score": 8.6,
+        "category": "競速",
+        "company": "任天堂",
+        "text": "《馬利歐賽車8 豪華版》是一款競速遊戲，玩家可以與朋友們一同體驗刺激的賽車比賽。遊戲中擁有豐富的賽道和各種經典角色，每場比賽都充滿挑戰與樂趣，適合所有年齡層的玩家。",
+        "image": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_800/ncom/software/switch/70010000000153/de697f487a36d802dd9a5ff0341f717c8486221f2f1219b675af37aca63bc453"
+    },
+    {
+        "name": "Super Mario Odyssey",
+        "score": 8.9,
+        "category": "平台、動作冒險",
+        "company": "任天堂",
+        "text": "《超級馬利歐：奧德賽》是一款充滿創新和冒險的3D平台遊戲。馬利歐將與他的夥伴帽子Cappy一起，探索各種奇幻世界並拯救公主。豐富的遊戲內容和創新的機制讓每一刻都充滿驚喜。",
+        "image": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_800/ncom/software/switch/70010000001130/c42553b4fd0312c31e70ec7468c6c9bccd739f340152925b9600631f2d29f8b5"
+    },
+    {
+        "name": "Another Code: Recollection",
+        "score": 8.5,
+        "category": "冒險、益智",
+        "company": "任天堂",
+        "text": "在《Another Code 回憶錄》中，玩家將跟隨主角的冒險解開父親失踪的謎團。這款遊戲結合了冒險和解謎元素，帶來了一個感人且引人入勝的故事。",
+        "image": "https://assets.nintendo.com/image/upload/c_limit,f_auto,h_500,q_auto,w_800/v1/ncom/software/switch/70010000072196/Video/posters/Switch_ACR_2023_OverviewTRL_16x9_eShop_ESRB_H264"
+    },
+    {
+        "name": "Xenoblade Chronicles X: Definitive Edition",
+        "score": 9.1,
+        "category": "動作角色扮演",
+        "company": "任天堂",
+        "text": "《異度神劍 X：終極版》是一款擁有宏大世界觀和深度角色扮演元素的遊戲。玩家將探索一個外星世界，並與其他玩家合作進行動作與戰鬥，這是一個充滿策略與探索的冒險。",
+        "image": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_800/ncom/software/switch/70010000088832/d33ed7f51de601b10cafa5814fd786bbad317b0421a43d54917a2c647be2f23b"
+    },
+    {
+        "name": "Xenoblade Chronicles 3",
+        "score": 8.7,
+        "category": "動作角色扮演",
+        "company": "任天堂",
+        "text": "《異度神劍 3》延續了系列的優良傳統，帶來了更具沉浸感的故事和精緻的戰鬥系統。玩家將與各種性格鮮明的角色並肩作戰，探索一個充滿謎團的世界。",
+        "image": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_800/ncom/software/switch/70010000053336/e933b48650b33b355e9cf2583da5c94b77180e40fb02d050041083dd62f4df39"
+    },
+    {
+        "name": "Splatoon 3",
+        "score": 7.0,
+        "category": "第三人稱射擊",
+        "company": "任天堂",
+        "text": "《斯普拉遁 3》將玩家帶入一個充滿色彩的競技射擊世界。你將控制獨特的“墨水精靈”，參與激烈的團隊對戰，使用各種武器和能力來贏得比賽，並提升自己的技巧。",
+        "image": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_800/ncom/software/switch/70010000046395/94a4095cda06c4d85c637d1af451979f9933302b6b17174d97c45de7a68584a2"
+    },
+    {
+        "name": "The Legend of Zelda: Breath of the Wild",
+        "score": 8.9,
+        "category": "動作冒險、動作角色扮演、開放世界",
+        "company": "任天堂",
+        "text": "《薩爾達傳說：荒野之息》是一款開放世界的動作冒險遊戲，玩家將扮演林克，探索廣大且充滿危險的世界。遊戲結合了冒險、解謎與戰鬥，帶來前所未有的自由度。",
+        "image": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_800/ncom/software/switch/70010000000025/7137262b5a64d921e193653f8aa0b722925abc5680380ca0e18a5cfd91697f58"
+    },
+    {
+        "name": "The Legend of Zelda: Tears of the Kingdom",
+        "score": 8.8,
+        "category": "動作冒險、動作角色扮演、開放世界",
+        "company": "任天堂",
+        "text": "《薩爾達傳說：王國之淚》延續了《荒野之息》的優良傳統，帶來更多創新的玩法。這一次，林克將面對新的挑戰並探索更為神秘的世界，遊戲深度和自由度進一步提升。",
+        "image": "https://assets.nintendo.com/image/upload/c_limit,f_auto,h_500,q_auto,w_800/v1/ncom/software/switch/70010000063714/Video/posters/Switch_ZeldaTOTK_TRL3_20230410_US-en_TRLonly_SwitchNews_H264"
+    },
+    {
+        "name": "The Legend of Zelda: Echoes of Wisdom",
+        "score": 8.4,
+        "category": "動作冒險、解謎、角色扮演、2D像素",
+        "company": "任天堂",
+        "text": "《薩爾達傳說：智慧之回聲》是一款2D像素風格的動作冒險遊戲，帶來了濃厚的懷舊感。玩家將解開謎題、進行戰鬥並發掘這片神秘世界中的秘密。",
+        "image": "https://assets.nintendo.com/image/upload/ar_16:9,b_auto:border,c_lpad/b_white/f_auto/q_auto/dpr_1.5/c_scale,w_800/ncom/software/switch/70010000084618/e3a49cf14180cec09c515595fb7121b048a0f8327eae2d248909d0f0c64a9dc9"
+    }
+]
