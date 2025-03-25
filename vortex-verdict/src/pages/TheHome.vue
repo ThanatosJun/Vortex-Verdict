@@ -1,8 +1,14 @@
 <template>
     <div class="home">
-        <div class="container mt-4">
-
-            <h1 class="text-center">Vortex Verdict 旋渦裁決</h1>
+        <div>
+            <img :src="img" alt="" class="mainvisual">
+            <div class="mainText d-flex flex-column align-items-center gap-2">
+                <h1 class="">Vortex Verdict</h1>
+                <span class="">遊戲世界的漩渦，評價公正的對決!</span>
+            </div>
+        </div>
+        <div class="container">
+            <h1 id="about" class="about-title">ABOUT</h1>
             <p>成立於2025年3月19日，
                 ---
                 Vortex Verdict 旋渦裁決｜遊戲評價的新標準
@@ -17,11 +23,67 @@
         </div>
     </div>
 </template>
+<script setup>
+    import { ref } from 'vue'
+    import game_data from "@/assets/game_data/game_data.json"
+
+    const img = ref("");
+    const data = JSON.parse(JSON.stringify(game_data));
+    console.log(data[0])
+    img.value = data[2].image;
+
+
+
+</script>
 
 <style scoped>
 .home {
+    z-index: -1;
     width: 100%;
     height: 90vh;
     background-color: #fcfcfc;
+}
+
+.mainvisual {
+    z-index: 0;
+    position: sticky;
+    width: 100%;
+    height: calc(100vh - 55px);
+    padding: 0;
+    overflow: hidden;
+    object-fit: cover;
+    /* background-position: inherit; */
+    /* object-position: center; */
+    mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 40%, rgba(0,0,0,0) 98%);
+    /* -webkit-mask-image: linear-gradient(to bottom, rgba(0,0,0,1) 80%, rgba(0,0,0,0)); */
+}
+.mainText { /* animation and shadow */
+    color: #fcfcfc;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.mainText h1 {
+    font-size: 6rem;
+    text-shadow: 0px 0px 20px rgba(32, 32, 32, 1);
+    filter: drop-shadow(0px 0px 20px rgba(32, 32, 32, 1));
+}
+
+.mainText span {
+    font-size: 3rem;
+    text-shadow: 0px 0px 20px rgba(32, 32, 32, 1);
+    filter: drop-shadow(0px 0px 20px rgba(32, 32, 32, 1));
+}
+
+.about-title {
+    font-size: 3rem;
+    font-weight: 800;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: #333;
 }
 </style>

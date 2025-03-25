@@ -4,7 +4,7 @@
             <div class="row align-items-center">
                 <div class="col-md-6">
                     <div class="footer-brand">Vertex Verdict</div>
-                    <p class="footer-text">Creating amazing experiences and innovative solutions for our customers
+                    <p class="footer-text">Creating amazing experiences and innovative verdicts for our gamers
                         worldwide.</p>
                     <div class="social-links">
                         <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
@@ -33,8 +33,8 @@
 
 <style scoped>
 .footer {
-    position: absolute;
-    bottom: 0;
+    /* position: relative; */
+    /* bottom: 0; */
     width: 100%;
     background: #f8f9fa;
     padding: 20px 0 20px;
