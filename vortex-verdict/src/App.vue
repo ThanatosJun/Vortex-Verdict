@@ -33,7 +33,7 @@ body {
 
 .router {
   margin-top: 8vh;
-  margin-bottom: 60vh;
+  margin-bottom: 80vh;
 }
 
 .route-enter-from {

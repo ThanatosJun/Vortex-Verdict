@@ -1,5 +1,5 @@
 <template>
-    <footer class="footer">
+    <footer class="">
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
@@ -32,24 +32,14 @@
 </template>
 
 <style scoped>
-.footer {
-    /* position: relative; */
-    /* bottom: 0; */
-    width: 100%;
-    background: #f8f9fa;
-    padding: 20px 0 20px;
-    border-top: 1px solid #eee;
-}
 
 .footer-brand {
     font-size: 1.5rem;
     font-weight: 600;
-    color: #333;
     margin-bottom: 15px;
 }
 
 .footer-text {
-    color: #6c757d;
     font-size: 0.9rem;
     max-width: 300px;
 }
@@ -59,14 +49,14 @@
 }
 
 .social-link {
-    color: #6c757d;
+    color: #e9e9e9;
     margin-right: 20px;
     font-size: 1.2rem;
     transition: color 0.3s ease;
 }
 
 .social-link:hover {
-    color: #0d6efd;
+    color: #8a7b99;
 }
 
 .footer-links {
@@ -78,18 +68,17 @@
 }
 
 .footer-links a {
-    color: #6c757d;
+    color: #e9e9e9;
     text-decoration: none;
     font-size: 0.9rem;
     transition: color 0.3s ease;
 }
 
 .footer-links a:hover {
-    color: #0d6efd;
+    color: #8a7b99;
 }
 
 .copyright {
-    color: #6c757d;
     font-size: 0.85rem;
     padding-top: 20px;
     border-top: 1px solid #eee;

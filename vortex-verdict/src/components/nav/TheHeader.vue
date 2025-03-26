@@ -1,6 +1,6 @@
 <template>
     <header>
-        <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+        <nav class="navbar navbar-expand-lg" data-bs-theme="dark">
             <div class="container-fluid d-flex justify-content-between">
                 <div class="container d-flex justify-content-between">
                     <a class="navbar-brand" href="#">Vertex Verdict</a>
