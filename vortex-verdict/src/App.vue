@@ -9,6 +9,7 @@
       </router-view>
     </div>
     <TheFooter />
+
   </div>
 </template>
 
@@ -32,8 +33,8 @@ body {
 }
 
 .router {
-  margin-top: 8vh;
-  margin-bottom: 80vh;
+  margin-top: 5vh;
+  margin-bottom: 150vh;
 }
 
 .route-enter-from {

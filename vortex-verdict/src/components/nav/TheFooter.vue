@@ -1,5 +1,5 @@
 <template>
-    <footer class="">
+    <footer>
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
@@ -32,7 +32,6 @@
 </template>
 
 <style scoped>
-
 .footer-brand {
     font-size: 1.5rem;
     font-weight: 600;
