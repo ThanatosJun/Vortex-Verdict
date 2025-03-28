@@ -164,17 +164,18 @@ h1 {
 }
 
 .btn-primary {
-  position: absolute;
+  /* position: absolute; */
   border-radius: 12px;
   background-color: var(--medium-purple);
   border: none;
   padding: 8px 15px;
-  bottom: 20px;
+  /* bottom: 20px; */
   font-weight: bold;
   letter-spacing: 0.5px;
   transition: all var(--transition-speed);
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   margin-right: 50px;
+  
 }
 
 .btn-primary:hover {

@@ -1,14 +1,18 @@
 <template>
-    <div>
-        <h2>404 - Not Found</h2>
-        <p>The page you are looking for does not exist. Maybe you can go <router-link to="/">our home page</router-link>.</p>
+    <div class="container">
+        <h2 class="text-light">404 - Not Found</h2>
+        <p class="text-light">The page you are looking for does not exist. Maybe you can go <router-link class="link" to="/">our home page</router-link>.</p>
     </div>
 </template>
   
 <style scoped>
 div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 65vh;
     text-align: center;
-    margin-top: 50px;
 }
 
 h2 {
@@ -21,4 +25,5 @@ p {
     color: #666;
     margin-top: 20px;
 }
+
 </style>

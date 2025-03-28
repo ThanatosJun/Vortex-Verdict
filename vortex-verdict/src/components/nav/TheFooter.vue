@@ -32,6 +32,10 @@
 </template>
 
 <style scoped>
+footer {
+    
+}
+
 .footer-brand {
     font-size: 1.5rem;
     font-weight: 600;

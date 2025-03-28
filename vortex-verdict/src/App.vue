@@ -1,15 +1,13 @@
 <template>
-  <div>
-    <TheHeader />
-    <div class="router">
-      <router-view v-slot="slotProps">
-        <transition name="route" mode="out-in">
-          <component :is="slotProps.Component"></component>
-        </transition>
-      </router-view>
-    </div>
-    <TheFooter />
 
+  <div class="router">
+    <the-header />
+    <router-view v-slot="slotProps">
+      <transition name="route" mode="out-in">
+        <component :is="slotProps.Component"></component>
+      </transition>
+    </router-view>
+    <the-footer />
   </div>
 </template>
 
@@ -30,11 +28,6 @@ html {
 
 body {
   margin: 0;
-}
-
-.router {
-  margin-top: 5vh;
-  margin-bottom: 150vh;
 }
 
 .route-enter-from {
