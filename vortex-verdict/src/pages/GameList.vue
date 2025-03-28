@@ -84,7 +84,7 @@
               <router-link :to="{ name: 'GameReview', params: { id: game.name }}" class="btn btn-primary">
                 View more
               </router-link>
-  
+
               <div class="metascore" :class="getScoreClass(game.score)">
                 {{ game.score }}
               </div>

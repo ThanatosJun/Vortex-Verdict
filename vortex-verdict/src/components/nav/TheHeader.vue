@@ -6,7 +6,7 @@
 
                     <a class="navbar-brand d-flex flex-row align-items-center justify-content-center" href="./">
                         <img src="@/assets/logo1.png" width="50px" height="50px" alt="">
-                        <p class="logo-title">Vertex Verdict</p>
+                        <p class="logo-title dotgothic16-regular">Vertex Verdict</p>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false"
@@ -22,6 +22,9 @@
                             </a>
                         </li>
 
+                        <li class="nav-item d-flex justify-content-center">
+                            <a class="nav-link hover-border" href="./#partners">Partners</a>
+                        </li>
                         <!-- Works with Dropdown -->
                         <li class="nav-item dropdown d-flex justify-content-center works-item">
                             <a href="./#works" class="nav-link dropdown-toggle hover-border" id="navbarDropdown"
@@ -29,7 +32,7 @@
                                 Works
                             </a>
                             <ul class="dropdown-menu">
-                                <li class="dropdown-list"><a href="/verdict" class="dropdown-item hover-border">Our
+                                <li class="dropdown-list"><a href="/games" class="dropdown-item hover-border">Our
                                         Work</a>
                                 </li>
                             </ul>
@@ -38,6 +41,7 @@
                         <li class="nav-item d-flex justify-content-center">
                             <a class="nav-link hover-border" href="./#recruit">Recruit</a>
                         </li>
+
                     </ul>
                 </div>
             </div>
@@ -73,6 +77,21 @@ onMounted(() => {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Dr+Sugiyama&family=DotGothic16&family=Press+Start+2P&display=swap');
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.dotgothic16-regular {
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
 /* Header Style */
 header {
     position: fixed;

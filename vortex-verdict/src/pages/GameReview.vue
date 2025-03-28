@@ -52,7 +52,10 @@
   
   <script setup>
   import { ref, onMounted } from 'vue'
-  
+  import data from '@/assets/game_data/game_data.json'
+
+  const gameData = JSON.parse(JSON.stringify(data))
+
   const game = ref(null)
   const defaultFeatures = [
     '精美的遊戲畫面',
@@ -61,17 +64,21 @@
   ]
   
   const getGameIdFromUrl = () => {
-    const urlParams = new URLSearchParams(window.location.search)
-    return urlParams.get('id')
+    // const urlParams = new URLSearchParams(window.location.search)
+    const urlObj = window.location.href.split('/')
+    const gameId = urlObj[urlObj.length - 1]
+    return gameId
+
   }
   
   const loadGameData = () => {
     const gameId = getGameIdFromUrl()
+
     if (!gameId) return
   
     const decodedId = decodeURIComponent(gameId)
     // Assume window.gameData is provided from an external script (e.g., game_data.js)
-    const foundGame = window.gameData.find(g => g.name === decodedId)
+    const foundGame = gameData.find(g => g.name === decodedId)
     if (foundGame) {
       game.value = foundGame
       document.title = `${foundGame.name} - Vortex Verdict`

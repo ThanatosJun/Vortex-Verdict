@@ -3,8 +3,8 @@
         <div class="mainvisual-container">
             <!-- <img :src="img" alt="bg-image" class="mainvisual"> -->
             <img src="@/assets/home/door.gif" alt="bg-image" class="mainvisual">
-            <div class="mainText d-flex flex-column align-items-center gap-2">
-                <h1 class="">Vortex Verdict</h1>
+            <div class="mainText  d-flex flex-column align-items-center gap-2">
+                <h1 class="dotgothic16-regular ">Vortex Verdict</h1>
                 <span class="text-center">遊戲世界的漩渦，評價公正的對決!</span>
             </div>
         </div>
@@ -23,6 +23,9 @@
             </div>
         </div>
 
+        <div id="partners" class="container d-flex flex-column align-items-center justify-content-center pt-5">
+            <h1 class="about-title">PARTNERS</h1>
+        </div>
         <div class="pen my-5">
             <div class="stage">
                 <a v-for="(image, index) in imgList" :key="index" :href="image.link" class="element" loading="lazy"
@@ -44,9 +47,8 @@
                         <img src="@/assets/home/assassins.jpg" alt="" class="img-fluid work-img">
                         <div class="work-box">
                             <h3 class="text-black fw-bolder">遊戲評價</h3>
-                            <p class="text-center text-dark fw-bold">您可以輕鬆探索並尋找感興趣的遊戲評價<br>同時直接進行洽談並獲取您需要的資訊</p> 
-                            <a href=""
-                                class="text-decoration-none text-light">
+                            <p class="text-center text-dark fw-bold">您可以輕鬆探索並尋找感興趣的遊戲評價<br>同時直接進行洽談並獲取您需要的資訊</p>
+                            <a href="/games" class="text-decoration-none text-light">
                                 <p class="work-btn mb-3">Work 總覽</p>
                             </a>
                         </div>
@@ -57,7 +59,7 @@
                     <div class="d-flex flex-column flex-md-row m-3 justify-content-md-center">
                         <img src="https://www.capcom.com.tw/assets/img/work2.jpg" alt="" class="img-fluid work-img">
                         <div class="work-box">
-                            <h3 class="text-black fw-bolder">遊戲評價</h3>
+                            <h3 class="text-black fw-bolder">招募夥伴</h3>
                             <p class="text-center text-dark fw-bold">由開發團隊與日本團隊攜手合作<br>
                                 共同進行遊戲專業評論</p>
                             <a href="#recruit" class="text-decoration-none text-light">
@@ -71,7 +73,7 @@
 
         <div id="recruit"
             class="container-fluid text-light d-flex flex-column align-items-center justify-content-center py-5">
-            <h1 class="about-title">Recruit</h1>
+            <h1 class="about-title">RECRUIT</h1>
             <p class="text-center recruit-text">
                 漩渦裁決致力於以遊戲評價為娛樂文化創造價值，
                 <br>
@@ -126,12 +128,12 @@ img.value = data[2].image;
 
 // resolve image path
 const imgList = ref([
-    { src: new URL('@/assets/home/capcom_logo.jpg', import.meta.url).href, text: "Capcom", link: "https://www.capcom.com.tw/#works" },
+    { src: new URL('@/assets/home/capcom_logo.jpg', import.meta.url).href, text: "Capcom", link: "https://www.capcom.com.tw/" },
     { src: new URL('@/assets/home/hoyoverse.png', import.meta.url).href, text: "Hoyoverse", link: "https://www.hoyoverse.com/zh-tw/" },
-    { src: new URL('@/assets/home/minecraft.jpg', import.meta.url).href, text: "Minecraft", link: "https://www.minecraft.com/" },
+    { src: new URL('@/assets/home/minecraft.jpg', import.meta.url).href, text: "Minecraft", link: "https://www.minecraft.net/zh-hant" },
     { src: new URL('@/assets/home/ubisoft_logo.png', import.meta.url).href, text: "Ubisoft", link: "https://www.ubisoft.com/zh-tw/" },
-    { src: new URL('@/assets/home/nintendo.png', import.meta.url).href, text: "Nintendo", link: "https://www.nintendo.com" },
-    { src: new URL('@/assets/home/riot.png', import.meta.url).href, text: "Riot", link: "https://www.riot.com" }
+    { src: new URL('@/assets/home/nintendo.png', import.meta.url).href, text: "Nintendo", link: "https://www.nintendo.com/tw/" },
+    { src: new URL('@/assets/home/riot.png', import.meta.url).href, text: "Riot", link: "https://www.riotgames.com/zh-cn" }
 ]);
 
 const activeIndex = ref(null)
@@ -148,6 +150,28 @@ const clearActive = () => {
 </script>
 
 <style scoped>
+@import url('https://fonts.googleapis.com/css2?family=Dr+Sugiyama&family=DotGothic16&family=Press+Start+2P&display=swap');
+
+.press-start-2p-regular {
+    font-family: "Press Start 2P", system-ui;
+    font-weight: 400;
+    font-style: normal;
+}
+
+
+.dotgothic16-regular {
+    font-family: "DotGothic16", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+}
+
+
+.dr-sugiyama-regular {
+    font-family: "Dr Sugiyama", cursive;
+    font-weight: 400;
+    font-style: normal;
+}
+
 .home {
     z-index: -1;
     width: 100%;
