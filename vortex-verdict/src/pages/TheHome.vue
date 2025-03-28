@@ -1,7 +1,8 @@
 <template>
     <div class="home">
         <div class="mainvisual-container">
-            <img :src="img" alt="bg-image" class="mainvisual">
+            <!-- <img :src="img" alt="bg-image" class="mainvisual"> -->
+            <img src="@/assets/home/door.gif" alt="bg-image" class="mainvisual">
             <div class="mainText d-flex flex-column align-items-center gap-2">
                 <h1 class="">Vortex Verdict</h1>
                 <span class="text-center">遊戲世界的漩渦，評價公正的對決!</span>
@@ -40,10 +41,12 @@
                 <div class="work1 d-block">
                     <div class="dot"></div>
                     <div class="d-flex flex-column flex-md-row-reverse m-3 justify-content-md-center">
-                        <img src="@/assets/home/minecraft.jpg" alt="" class="img-fluid work-img">
+                        <img src="@/assets/home/assassins.jpg" alt="" class="img-fluid work-img">
                         <div class="work-box">
                             <h3 class="text-black fw-bolder">遊戲評價</h3>
-                            <a href="" class="text-decoration-none text-light">
+                            <p class="text-center text-dark fw-bold">您可以輕鬆探索並尋找感興趣的遊戲評價<br>同時直接進行洽談並獲取您需要的資訊</p> 
+                            <a href=""
+                                class="text-decoration-none text-light">
                                 <p class="work-btn mb-3">Work 總覽</p>
                             </a>
                         </div>
@@ -52,11 +55,13 @@
                 <div class="work2 d-block">
                     <div class="dot"></div>
                     <div class="d-flex flex-column flex-md-row m-3 justify-content-md-center">
-                        <img src="@/assets/home/minecraft.jpg" alt="" class="img-fluid work-img">
+                        <img src="https://www.capcom.com.tw/assets/img/work2.jpg" alt="" class="img-fluid work-img">
                         <div class="work-box">
                             <h3 class="text-black fw-bolder">遊戲評價</h3>
-                            <a href="" class="text-decoration-none text-light">
-                                <p class="work-btn mb-3">Work 總覽</p>
+                            <p class="text-center text-dark fw-bold">由開發團隊與日本團隊攜手合作<br>
+                                共同進行遊戲專業評論</p>
+                            <a href="#recruit" class="text-decoration-none text-light">
+                                <p class="work-btn mb-3">加入我們</p>
                             </a>
                         </div>
                     </div>
@@ -116,7 +121,6 @@ import game_data from "@/assets/game_data/game_data.json"
 
 const img = ref("");
 const data = JSON.parse(JSON.stringify(game_data));
-// console.log(data[0])
 img.value = data[2].image;
 
 

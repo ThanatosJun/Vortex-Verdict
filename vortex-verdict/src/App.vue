@@ -1,14 +1,14 @@
 <template>
 
+  <the-header />
   <div class="router">
-    <the-header />
     <router-view v-slot="slotProps">
       <transition name="route" mode="out-in">
         <component :is="slotProps.Component"></component>
       </transition>
     </router-view>
-    <the-footer />
   </div>
+  <the-footer />
 </template>
 
 <script setup>
@@ -28,6 +28,10 @@ html {
 
 body {
   margin: 0;
+}
+
+.router {
+  margin-top: 11vh;
 }
 
 .route-enter-from {
