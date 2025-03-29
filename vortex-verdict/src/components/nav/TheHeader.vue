@@ -6,7 +6,7 @@
 
                     <a class="navbar-brand d-flex flex-row align-items-center justify-content-center" href="/">
                         <img src="@/assets/logo1.png" width="50px" height="50px" alt="">
-                        <p class="logo-title dotgothic16-regular">Vertex Verdict</p>
+                        <p class="logo-title dotgothic16-regular">Vortex Verdict</p>
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false"

@@ -3,7 +3,7 @@
         <div class="container">
             <div class="row align-items-center">
                 <div class="col-md-6">
-                    <div class="footer-brand">Vertex Verdict</div>
+                    <div class="footer-brand">Vortex Verdict</div>
                     <p class="footer-text">Creating amazing experiences and innovative verdicts for our gamers
                         worldwide.</p>
                     <div class="social-links">
@@ -34,9 +34,6 @@
 </template>
 
 <style scoped>
-footer {
-    
-}
 
 .footer-brand {
     font-size: 1.5rem;
