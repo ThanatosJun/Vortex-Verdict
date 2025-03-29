@@ -1,6 +1,13 @@
 # Vortex-Verdict
 
 ## 成員分工：
+### 成員
+| 成員 | 洪永結 | 林煒致 | 葉羿君 |
+| 遊戲資料搜尋|:smile:|:smile:|:smile:|
+| Home Page（TheHome.vue）|:smile:|-------|-------|
+| Search Page  (GameList.vue) |------|:smile:|-------|
+| Detail Page（GameReview.vue |------|--------|:smile:|
+| 系統整合|:smile:|-------|--------|
 
 ## 要求功能：
 
