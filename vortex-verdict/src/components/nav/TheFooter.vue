@@ -16,12 +16,12 @@
 
                 <div class="col-md-6 text-md-end">
                     <ul class="footer-links">
-                        <li><a href="./#about">About</a></li>
+                        <li><a href="/#about">About</a></li>
                         <!-- <li><a href="./#partners">Partners</a></li> -->
                         <!-- <li><a href="./#works">Works</a></li> -->
-                        <li><a href="./#recruit">Recruit</a></li>
-                        <li><a href="./">Privacy</a></li>
-                        <li><a href="./">Terms</a></li>
+                        <li><a href="/#recruit">Recruit</a></li>
+                        <li><a href="/">Privacy</a></li>
+                        <li><a href="/">Terms</a></li>
                     </ul>
                 </div>
             </div>
