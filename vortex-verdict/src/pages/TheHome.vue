@@ -3,7 +3,7 @@
         <div class="mainvisual-container">
             <!-- <img :src="img" alt="bg-image" class="mainvisual"> -->
             <img src="@/assets/home/door.gif" alt="bg-image" class="mainvisual">
-            <div class="mainText  d-flex flex-column align-items-center gap-2">
+            <div class="mainText d-flex flex-column align-items-center gap-2">
                 <h1 class="dotgothic16-regular ">Vortex Verdict</h1>
                 <span class="text-center">遊戲世界的漩渦，評價公正的對決!</span>
             </div>
@@ -210,6 +210,7 @@ const clearActive = () => {
 }
 
 .mainText h1 {
+    border-bottom: none;
     font-size: 4rem;
     text-shadow: 0px 0px 20px rgba(32, 32, 32, 1);
     filter: drop-shadow(0px 0px 20px rgba(32, 32, 32, 1));
