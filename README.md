@@ -1,5 +1,7 @@
 # Vortex-Verdict
 
+## 成員分工：
+
 ## 要求功能：
 
 - **JS 框架**：Vue.js
