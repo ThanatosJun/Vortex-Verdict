@@ -1,12 +1,12 @@
 <!-- DOM for html -->
 <template>
     <div v-if="game" class="container game-container shadow-lg position-absolute top-50 start-50 translate-middle">
-        <div class="image-container mb-4">
-            <img v-bind:src="game.image" class="game-image col-lg-12 mb-4 shadow-lg" alt="game image">
+        <div class="image-container mt-4 mb-4 mx-auto d-block">
+            <img v-bind:src="game.image" class="game-image col-lg-12 shadow-lg" alt="game image">
         </div>
         <h2 class="game-title text-center mb-4">{{ game.name }}</h2>
 
-        <div class="attribute-container mb-4 ">
+        <div class="attribute-container mb-4">
             <div class="attribute-content col-lg-4 col-12">
                 <h3 class="detail-title">評分</h3>
                 <p class="game-info">{{ game.score }}</p>
@@ -60,19 +60,21 @@ export default {
     background-color: #2c3e50;
     color: #ecf0f1;
     border-radius: 10px;
-    padding: 2rem;
+    padding: 1rem;
 }
 
 .image-container {
-    display: fit;
-    box-shadow: 0rem -1rem 20rem 1rem #ffffff;
+    width: 100%;
+    max-width: 1000px;
+    box-shadow: 0rem 0rem 30rem 0rem #ffffff;
+    border-radius: 20px;
 }
 
 .game-image {
     width: 100%;
     height: auto;
-    object-fit: cover;
-    border-radius: 10px;
+    object-fit: contain;
+    border-radius: 20px;
 }
 
 .game-title {
@@ -88,33 +90,45 @@ export default {
 }
 
 .game-info {
-    font-size: 1rem;
+    font-size: 1.25rem;
     color: #ecf0f1;
 }
 
 .attribute-container {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 1rem;
     display: flex;
-    text-align: center;
     gap: 25px;
 }
 
 .attribute-content {
-    display: table;
     flex: 1;
     background-color: #34495e;
     margin: auto;
     padding: 1rem;
     border-radius: 8px;
+    text-align: center;
     box-shadow: 
     inset 0 0rem 1rem rgb(140, 117, 243),
     0 0rem 1rem #ffffff;
-    transition: transform 0.3s ease, background-color 0.3s ease;
+    transition: all 0.3s ease-in-out;
 }
 
 .attribute-content:hover {
     background-color: #4f16ec;
     transform: translateY(-10px);
+}
+
+.attribute-content .game-info {
+    font-size: 1.5rem;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.attribute-content:hover .game-info {
+    font-size: 2rem;
 }
 
 .attribute-content h3 {
@@ -139,6 +153,7 @@ export default {
 
 @media (max-width: 767px) {
     .game-container {
+        margin: 50px 0;
         padding: 1rem;
     }
 
