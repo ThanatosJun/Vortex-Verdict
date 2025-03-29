@@ -1,4 +1,4 @@
-# [Vortex-Verdict](https://thanatosjun.github.io/Vortex-Verdict/dist/index.html)
+# [Vortex-Verdict](https://thanatosjun.github.io/Vortex-Verdict/vortex-verdict/dist/index.html)
 ## 成員分工  
 | 成員 | 洪永結 | 林煒致 | 葉羿君 |
 |------|------|------|------|
