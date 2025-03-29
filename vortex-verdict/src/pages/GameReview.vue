@@ -1,56 +1,5 @@
-<template>
-    <div class="container mt-4">
-      <h1>Vortex Verdict</h1>
-  
-      <!-- <a href="./games" class="btn btn-secondary mb-4">返回遊戲列表</a> -->
-       <router-link to="/games" class="btn btn-secondary mb-4">返回遊戲列表</router-link>
-  
-      <div v-if="game" class="card">
-        <div class="row g-0">
-          <div class="col-md-4 p-3">
-            <img :src="game.image" class="game-cover" :alt="game.name" />
-            <div class="d-flex justify-content-between align-items-center mt-3">
-              <span class="badge bg-primary">{{ game.category }}</span>
-              <div class="metascore-large" :class="getScoreClass(game.score)">
-                {{ game.score }}
-              </div>
-            </div>
-          </div>
-          <div class="col-md-8">
-            <div class="card-body">
-              <h2 class="card-title">{{ game.name }}</h2>
-              <p class="card-text"><strong>開發商：</strong> {{ game.company }}</p>
-              <p class="card-text"><strong>發行日期：</strong> {{ game.releaseDate || '未知' }}</p>
-  
-              <div class="mt-4">
-                <h4>遊戲介紹</h4>
-                <p>{{ game.description }}</p>
-              </div>
-  
-              <div class="mt-4">
-                <h4>遊戲特色</h4>
-                <ul class="feature-list">
-                  <li v-for="(feature, index) in game.features || defaultFeatures" :key="index">
-                    {{ feature }}
-                  </li>
-                </ul>
-              </div>
-  
-              <a v-if="game.officialSite" :href="game.officialSite" target="_blank" class="btn btn-primary mt-3">
-                前往官方網站
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-  
-      <div v-else class="alert alert-warning">
-        找不到該遊戲的資訊，請返回列表重新選擇。
-      </div>
-    </div>
-  </template>
-  
-  <script setup>
+
+  <!-- <script setup>
   import { ref, onMounted } from 'vue'
   import data from '@/assets/game_data/game_data.json'
 
@@ -94,43 +43,174 @@
   onMounted(() => {
     loadGameData()
   })
-  </script>
+  </script> -->
   
-  <style scoped>
-  .game-cover {
+
+
+<template>
+    <div v-if="game" class="container game-container shadow-lg position-absolute top-50 start-50 translate-middle">
+        <div class="image-container mt-4 mb-4 mx-auto d-block">
+            <img v-bind:src="game.image" class="game-image col-lg-12 shadow-lg" alt="game image">
+        </div>
+        <h2 class="game-title text-center mb-4">{{ game.name }}</h2>
+
+        <div class="attribute-container mb-4">
+            <div class="attribute-content col-lg-4 col-12">
+                <h3 class="detail-title">評分</h3>
+                <p class="game-info">{{ game.score }}</p>
+            </div>
+            <div class="attribute-content col-lg-4 col-12">
+                <h3 class="detail-title">類別</h3>
+                <p class="game-info">{{ game.category }}</p>
+            </div>
+            <div class="attribute-content col-lg-4 col-12">
+                <h3 class="detail-title">公司</h3>
+                <p class="game-info">{{ game.company }}</p>
+            </div>
+        </div>
+
+        <div class="text-content">
+            <h3 class="detail-title text-left">遊戲簡介</h3>
+            <p class="game-info">{{ game.text }}</p>
+        </div>
+    </div>
+    <div v-else class="container shadow-lg position-absolute top-50 start-50 translate-middle">
+        <p class="text-center">載入中或找不到遊戲......</p>
+    </div>
+</template>
+
+
+<!-- Action for JS -->
+<script>
+import gameDataJson from '@/assets/game_data/game_data.json'
+
+export default {
+    data() {
+        return {
+            game: null,
+        };
+    },
+    async created() {
+        // const gameName = "看門狗：自由軍團";
+        const gameName = this.$route.params.id;
+        try {
+            this.game = gameDataJson.find((game) => game.name === gameName) || null;
+        } catch (error) {
+            console.error("載入遊戲資料時出錯:", error);
+        }
+    },
+};
+</script>
+
+<!-- Style for css -->
+<style scoped>
+.game-container {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    border-radius: 10px;
+    padding: 1rem;
+}
+
+.image-container {
     width: 100%;
-    border-radius: 8px;
-  }
-  
-  .metascore-large {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    color: white;
+    max-width: 1000px;
+    box-shadow: 0rem 0rem 30rem 0rem #ffffff;
+    border-radius: 20px;
+}
+
+.game-image {
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 20px;
+}
+
+.game-title {
+    font-size: 2rem;
     font-weight: bold;
-    font-size: 24px;
-  }
-  
-  .green {
-    background-color: #6c3;
-  }
-  
-  .yellow {
-    background-color: #fc3;
-  }
-  
-  .red {
-    background-color: #f00;
-  }
-  
-  .feature-list {
-    padding-left: 20px;
-  }
-  
-  .feature-list li {
-    margin-bottom: 8px;
-  }
-  </style>
+    color: #ebebeb;
+}
+
+.detail-title {
+    font-size: 1.75rem;
+    font-weight: bold;
+    color: #f39c12;
+}
+
+.game-info {
+    font-size: 1.25rem;
+    color: #ecf0f1;
+}
+
+.attribute-container {
+    width: 80%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+    display: flex;
+    gap: 25px;
+}
+
+.attribute-content {
+    flex: 1;
+    background-color: #34495e;
+    margin: auto;
+    padding: 1rem;
+    border-radius: 8px;
+    text-align: center;
+    box-shadow: 
+    inset 0 0rem 1rem rgb(140, 117, 243),
+    0 0rem 1rem #ffffff;
+    transition: all 0.3s ease-in-out;
+}
+
+.attribute-content:hover {
+    background-color: #4f16ec;
+    transform: translateY(-10px);
+}
+
+.attribute-content .game-info {
+    font-size: 1.5rem;
+    transition: font-size 0.3s ease-in-out;
+}
+
+.attribute-content:hover .game-info {
+    font-size: 2rem;
+}
+
+.attribute-content h3 {
+    color: #f39c12;
+}
+
+.attribute-content p {
+    color: #ecf0f1;
+}
+
+.text-content {
+    margin-top: 2rem;
+}
+
+.text-content h3 {
+    color: #ebebeb;
+}
+
+.text-content p {
+    color: #ecf0f1;
+}
+
+@media (max-width: 767px) {
+    .game-container {
+        margin: 50px 0;
+        padding: 1rem;
+    }
+
+    .attribute-container {
+        display: block;
+    }
+
+    .attribute-container .col-lg-4 {
+        margin-bottom: 1rem;
+    }
+}
+</style>
