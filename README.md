@@ -1,3 +1,4 @@
+僅為教育目的而創建
 # [Vortex-Verdict](https://thanatosjun.github.io/Vortex-Verdict/vortex-verdict/dist/)
 ## 成員分工  
 | 成員 | 洪永結 | 林煒致 | 葉羿君 |
