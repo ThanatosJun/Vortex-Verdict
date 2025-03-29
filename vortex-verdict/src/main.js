@@ -1,5 +1,5 @@
 import { createApp } from 'vue';
-import App from './pages/GameDetail.vue';
+import App from './pages/GameReview.vue';
 
 import 'bootstrap/dist/css/bootstrap.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min.js';

@@ -107,13 +107,13 @@
   
   <script>
   import { ref, computed, watch, onMounted, onUnmounted } from 'vue'
-  import { useRouter } from 'vue-router'
+  // import { useRouter } from 'vue-router'
   import gameDataJson from '@/assets/game_data/game_data.json'
   
   export default {
     name: 'GameList',
     setup() {
-      const router = useRouter()
+      // const router = useRouter()
       const query = ref("")
       const sortOrder = ref("highest")
       const itemsToShow = ref(6)

@@ -43,8 +43,8 @@ export default {
         };
     },
     async created() {
-        const gameName = "看門狗：自由軍團";
-        // const gameName = this.$route.params.id;
+        // const gameName = "看門狗：自由軍團";
+        const gameName = this.$route.params.id;
         try {
             this.game = gameDataJson.find((game) => game.name === gameName) || null;
         } catch (error) {
