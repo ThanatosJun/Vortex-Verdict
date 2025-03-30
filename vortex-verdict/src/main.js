@@ -8,7 +8,7 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 // import "@/assets/css/bootstrap.css"
 import "@/assets/css/customStyle.css"
 import '@fortawesome/fontawesome-free/css/all.css';
-import router from "./router/index.js"
+import router from "./router.js"
 
 app.use(router)
 app.mount('#app')

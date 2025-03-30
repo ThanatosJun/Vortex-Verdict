@@ -22,7 +22,7 @@ module.exports = defineConfig({
     },
   },
   publicPath: './',
-  devServer: {
-    historyApiFallback: true,
-  },
+  // devServer: {
+  //   historyApiFallback: true,
+  // },
 });
