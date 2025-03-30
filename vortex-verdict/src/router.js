@@ -28,4 +28,12 @@ const router = new createRouter({
   routes,
 });
 
+router.beforeEach((to, from, next) => {
+  if (to.matched.length === 0) {
+    next('/Vortex-Verdict'); // 導向主畫面
+  } else {
+    next();
+  }
+});
+
 export default router;
