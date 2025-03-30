@@ -21,8 +21,10 @@ module.exports = defineConfig({
       }
     },
   },
-  publicPath: './',
-  // devServer: {
-  //   historyApiFallback: true,
-  // },
+  publicPath: process.env.NODE_ENV === 'production'
+    ? '/Vortex-Verdict/'
+    : './',
+  devServer: {
+    historyApiFallback: true,
+  },
 });
