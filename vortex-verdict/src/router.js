@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory} from "vue-router";
+// import { createRouter, createWebHistory} from "vue-router";
 // import { createRouter, createMemoryHistory } from "vue-router";
-// import { createRouter, createWebHashHistory} from "vue-router";
+import { createRouter, createWebHashHistory} from "vue-router";
 
 import Home from "@/pages/TheHome.vue";
 import NotFound from "@/pages/NotFound.vue";
@@ -17,8 +17,8 @@ const routes = [
 
 const router = new createRouter({
   // mode: 'hash',
-  history: createWebHistory(),
-  // history: createWebHashHistory(),
+  // history: createWebHistory(),
+  history: createWebHashHistory(),
   scrollBehavior(to) {
     if (to.hash) {
       return { el: to.hash };
