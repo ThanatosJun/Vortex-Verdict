@@ -32,9 +32,8 @@
   </div>
 
   <div class="back-button">
-    <a class="btn btn-primary" href="/games">返回遊戲列表</a>
+    <button v-on:click="goToHome" class="btn btn-primary">返回遊戲列表</button>
   </div>
-
 </template>
 
 
@@ -50,13 +49,19 @@ export default {
   },
   async created() {
     // const gameName = "看門狗：自由軍團";
-    const gameName = this.$route.params.id;
+    const gameName = decodeURIComponent(this.$route.params.id)
+    // const gameName = this.$route.params.id;
     try {
       this.game = gameDataJson.find((game) => game.name === gameName) || null;
     } catch (error) {
       console.error("載入遊戲資料時出錯:", error);
     }
   },
+  methods: {
+    goToHome() {
+      this.$router.replace({ name: 'GameList' });
+    }
+  }
 };
 </script>
 

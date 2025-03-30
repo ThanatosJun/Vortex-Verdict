@@ -48,9 +48,9 @@
                         <div class="work-box">
                             <h3 class="text-black fw-bolder">遊戲評價</h3>
                             <p class="text-center text-dark fw-bold">您可以輕鬆探索並尋找感興趣的遊戲評價<br>同時直接進行洽談並獲取您需要的資訊</p>
-                            <a href="/games" class="text-decoration-none text-light">
+                            <router-link :to="{ name: 'GameList' }" class="text-decoration-none text-light">
                                 <p class="work-btn mb-3">Work 總覽</p>
-                            </a>
+                            </router-link>
                         </div>
                     </div>
                 </div>

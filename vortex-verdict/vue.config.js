@@ -15,15 +15,16 @@ module.exports = defineConfig({
         chunks: 'all',
       }
     },
-    resolve:{
-      alias:{
-        "@":path.resolve(__dirname,'./src')
-      }
-    },
+    // resolve:{
+    //   alias:{
+    //     "@":path.resolve(__dirname,'./src')
+    //   }
+    // },
   },
-  publicPath: process.env.NODE_ENV === 'production'
-    ? '/Vortex-Verdict/'
-    : './',
+  publicPath: '/vortex-verdict/dist/',
+  // publicPath: process.env.NODE_ENV === 'production'
+  //   ? '/Vortex-Verdict/'
+  //   : './',
   devServer: {
     historyApiFallback: true,
   },

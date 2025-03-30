@@ -1,5 +1,4 @@
 <template>
-
   <the-header />
   <div class="router">
     <router-view v-slot="slotProps">

@@ -1,6 +1,6 @@
-import { createRouter, createWebHistory} from "vue-router";
+// import { createRouter, createWebHistory} from "vue-router";
 // import { createRouter, createMemoryHistory } from "vue-router";
-// import { createRouter, createWebHashHistory} from "vue-router";
+import { createRouter, createWebHashHistory} from "vue-router";
 
 import Home from "@/pages/TheHome.vue";
 import NotFound from "@/pages/NotFound.vue";
@@ -8,8 +8,7 @@ import NotFound from "@/pages/NotFound.vue";
 // import GameReview from "@/pages/GameReview.vue";
 
 const routes = [
-  // { path: "", component: Home },
-  { path: "/", component: Home },
+  { path: "/", name: "Home", component: Home },
   { path: "/:notFound(.*)", component: NotFound },
   { path: "/games", name: "GameList", component: () => import("@/pages/GameList.vue") },
   { path: "/game/:id", name: "GameReview", component: () => import("@/pages/GameReview.vue") },
@@ -17,9 +16,14 @@ const routes = [
 
 const router = new createRouter({
   // mode: 'hash',
-  history: createWebHistory(),
+  // history: createWebHistory(),
+  history: createWebHashHistory(),
+  scrollBehavior(to) {
+    if (to.hash) {
+      return { el: to.hash };
+    }
+  },
   // history: createMemoryHistory(),
-  // history: createWebHashHistory(),
   routes,
 });
 

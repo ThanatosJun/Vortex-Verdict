@@ -4,10 +4,10 @@
             <div class="container-fluid d-flex justify-content-between">
                 <div class="container d-flex justify-content-between">
 
-                    <a class="navbar-brand d-flex flex-row align-items-center justify-content-center" href="/">
+                    <router-link :to="{ name: 'Home'}" class="navbar-brand d-flex flex-row align-items-center justify-content-center">
                         <img src="@/assets/logo1.png" width="50px" height="50px" alt="">
                         <p class="logo-title dotgothic16-regular">Vortex Verdict</p>
-                    </a>
+                    </router-link>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
                         data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false"
                         aria-label="Toggle navigation">
@@ -17,31 +17,36 @@
                 <div class="collapse navbar-collapse" id="navbarColor02">
                     <ul class="navbar-nav">
                         <li class="nav-item d-flex justify-content-center">
-                            <a class="nav-link active hover-border" href="/#about">
-                                About
-                            </a>
+                            <router-link :to="{ name: 'Home', hash: '#about'}" class="nav-link active hover-border">
+                            About
+                            </router-link>
                         </li>
 
                         <li class="nav-item d-flex justify-content-center">
-                            <a class="nav-link hover-border" href="/#partners">Partners</a>
+                            <router-link :to="{ name: 'Home', hash: '#partners' }" class="nav-link hover-border">
+                            Partners
+                            </router-link>
                         </li>
+
                         <!-- Works with Dropdown -->
                         <li class="nav-item dropdown d-flex justify-content-center works-item">
-                            <a href="/#works" class="nav-link dropdown-toggle hover-border" id="navbarDropdown"
-                                data-scroll aria-expanded="false">
+                            <router-link :to="{ name: 'Home', hash: '#works' }" class="nav-link dropdown-toggle hover-border" id="navbarDropdown" data-scroll aria-expanded="false">
                                 Works
-                            </a>
+                            </router-link>
                             <ul class="dropdown-menu">
-                                <li class="dropdown-list"><a href="/games" class="dropdown-item hover-border">Our
-                                        Work</a>
+                                <li class="dropdown-list">
+                                    <router-link :to="{ name: 'GameList' }" class="dropdown-item hover-border">
+                                    Our Work
+                                    </router-link>
                                 </li>
                             </ul>
                         </li>
 
                         <li class="nav-item d-flex justify-content-center">
-                            <a class="nav-link hover-border" href="/#recruit">Recruit</a>
+                            <router-link :to="{ name: 'Home', hash: '#recruit' }" class="nav-link hover-border">
+                                Recruit
+                            </router-link>
                         </li>
-
                     </ul>
                 </div>
             </div>
