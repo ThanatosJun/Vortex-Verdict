@@ -4,14 +4,15 @@ import { createRouter, createWebHistory} from "vue-router";
 
 import Home from "@/pages/TheHome.vue";
 import NotFound from "@/pages/NotFound.vue";
-// import GameList from "@/pages/GameList.vue";
-// import GameReview from "@/pages/GameReview.vue";
+import GameList from "@/pages/GameList.vue";
+import GameReview from "@/pages/GameReview.vue";
 
 const routes = [
-  { path: "/", name: "Home", component: Home },
-  { path: "/:notFound(.*)", component: NotFound },
-  { path: "/games", name: "GameList", component: () => import("@/pages/GameList.vue") },
-  { path: "/game/:id", name: "GameReview", component: () => import("@/pages/GameReview.vue") },
+  { path: "/Vortex-Verdict", name: "Home", component: Home },
+  { path: "/Vortex-Verdict/:notFound(.*)", component: NotFound },
+  { path: "/Vortex-Verdict/games", name: "GameList", component: GameList },
+  { path: "/Vortex-Verdict/games/:id", name: "GameReview", component: GameReview },
+  // { path: "/Vortex-Verdict/game/:id", name: "GameReview", component: () => import("@/pages/GameReview.vue") },
 ]
 
 const router = new createRouter({
