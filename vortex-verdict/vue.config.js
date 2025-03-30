@@ -23,7 +23,7 @@ module.exports = defineConfig({
   },
   // publicPath: '/vortex-verdict/dist/',
   publicPath: process.env.NODE_ENV === 'production'
-    ? '/Vortex-Verdict/'
+    ? '/Vortex-Verdict'
     : './',
   devServer: {
     historyApiFallback: true,

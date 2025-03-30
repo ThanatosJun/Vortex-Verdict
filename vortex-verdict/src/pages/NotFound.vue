@@ -1,7 +1,7 @@
 <template>
     <div class="container">
         <h2 class="text-light">404 - Not Found</h2>
-        <p class="text-light">The page you are looking for does not exist. Maybe you can go <router-link class="link" to="/">our home page</router-link>.</p>
+        <p class="text-light">The page you are looking for does not exist. Maybe you can go <router-link class="link" to="/Vortex-Verdict">our home page</router-link>.</p>
     </div>
 </template>
   
