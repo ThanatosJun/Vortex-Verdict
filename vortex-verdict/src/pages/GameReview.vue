@@ -1,38 +1,40 @@
 <template>
-  <div class="d-flex justify-content-center align-items-center">
-    <div v-if="game" class="container game-container shadow-lg position-relative">
-      <div class="image-container mt-4 mb-4 mx-auto d-block">
-        <img v-bind:src="game.image" class="game-image col-lg-12 shadow-lg" alt="game image">
-      </div>
-      <h2 class="game-title text-center mb-4">{{ game.name }}</h2>
+  <div>
+    <div class="d-flex justify-content-center align-items-center">
+      <div v-show="game" class="container game-container shadow-lg position-relative">
+        <div class="image-container mt-4 mb-4 mx-auto d-block">
+          <img v-bind:src="game.image" class="game-image col-lg-12 shadow-lg" alt="game image">
+        </div>
+        <h2 class="game-title text-center mb-4">{{ game.name }}</h2>
 
-      <div class="attribute-container mb-4">
-        <div class="attribute-content col-lg-4 col-12">
-          <h3 class="detail-title">評分</h3>
-          <p class="game-info">{{ game.score }}</p>
+        <div class="attribute-container mb-4">
+          <div class="attribute-content col-lg-4 col-12">
+            <h3 class="detail-title">評分</h3>
+            <p class="game-info">{{ game.score }}</p>
+          </div>
+          <div class="attribute-content col-lg-4 col-12">
+            <h3 class="detail-title">類別</h3>
+            <p class="game-info">{{ game.category }}</p>
+          </div>
+          <div class="attribute-content col-lg-4 col-12">
+            <h3 class="detail-title">公司</h3>
+            <p class="game-info">{{ game.company }}</p>
+          </div>
         </div>
-        <div class="attribute-content col-lg-4 col-12">
-          <h3 class="detail-title">類別</h3>
-          <p class="game-info">{{ game.category }}</p>
-        </div>
-        <div class="attribute-content col-lg-4 col-12">
-          <h3 class="detail-title">公司</h3>
-          <p class="game-info">{{ game.company }}</p>
+
+        <div class="text-content">
+          <h3 class="detail-title text-left">遊戲簡介</h3>
+          <p class="game-info">{{ game.text }}</p>
         </div>
       </div>
-
-      <div class="text-content">
-        <h3 class="detail-title text-left">遊戲簡介</h3>
-        <p class="game-info">{{ game.text }}</p>
+      <div v-show="!game" class="container shadow-lg position-absolute top-50 start-50 translate-middle">
+        <p class="text-center">載入中或找不到遊戲......</p>
       </div>
     </div>
-    <div v-else class="container shadow-lg position-absolute top-50 start-50 translate-middle">
-      <p class="text-center">載入中或找不到遊戲......</p>
-    </div>
-  </div>
 
-  <div class="back-button">
-    <button v-on:click="goToHome" class="btn btn-primary">返回遊戲列表</button>
+    <div class="back-button">
+      <button v-on:click="goToHome" class="btn btn-primary">返回遊戲列表</button>
+    </div>
   </div>
 </template>
 
